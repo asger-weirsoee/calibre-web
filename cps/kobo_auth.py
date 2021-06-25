@@ -128,7 +128,7 @@ def generate_auth_token(user_id):
     else:
         host = ':'.join(host_list[0:-1])
     if host.startswith('127.') or host.lower() == 'localhost' or host.startswith('[::ffff:7f'):
-        warning = _('PLease access calibre-web from non localhost to get valid api_endpoint for kobo device')
+        warning = _('Please access calibre-web from non localhost to get valid api_endpoint for kobo device')
         return render_title_template(
             "generate_kobo_auth_url.html",
             title=_(u"Kobo Setup"),
